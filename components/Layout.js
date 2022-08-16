@@ -7,6 +7,18 @@ class Layout extends Component {
     render = () => {
         return (
             <Container>
+                        <style jsx global>{`
+            body {
+
+              color: #333;
+            }
+            h1 {
+              font-weight: 700;
+            }
+            p {
+              margin-bottom: 10px;
+            }
+            `}</style>
                 <Head>
                     <title>Owl Calendar</title>
                     <link rel="stylesheet"

@@ -168,7 +168,7 @@ class ManageCalendarModal extends Component {
                     <Form style={{ paddingTop: "1em" }}>
                         <Form.Field widths='equal'>
                             <Label size="large">Calendar Name:</Label>
-                            <Input placeholder='New Calendar Name' onChange={this.setNewCalendarName} />
+                            <Input placeholder='New Timesheet Name' onChange={this.setNewCalendarName} />
                         </Form.Field>
                         <Form.Field>
                             <Label size="large">Username:</Label>
@@ -189,7 +189,7 @@ class ManageCalendarModal extends Component {
                     <Form style={{ paddingTop: "1em" }}>
                         <Form.Field>
                             <Label size="large">Calendar Address:</Label>
-                            <Input placeholder='Calendar you want to join' onChange={this.setCalendarAddressToJoin} />
+                            <Input placeholder='Project to record Time' onChange={this.setCalendarAddressToJoin} />
                         </Form.Field>
                         <Form.Field>
                             <Button onClick={this.joinCalendar} loading={this.state.loading} disabled={this.state.loading}>Join</Button>
@@ -292,9 +292,9 @@ class ManageCalendarModal extends Component {
                 size="large"
                 onClose={() => this.setState({ open: false })}
                 onOpen={() => { this.refreshState(); this.setState({ open: true }) }}
-                trigger={<Button>Manage Calendar</Button>}
+                trigger={<Button>Manage Timesheet</Button>}
             >
-                <Modal.Header>Manage Calendar</Modal.Header>
+                <Modal.Header>Manage Timesheet</Modal.Header>
                 <Modal.Content scrolling>
                     {this.props.hasSelectedCalendar ?
                         <Tab panes={[this.createTap(), this.joinTap(), this.selectedCalendarTap()]} />

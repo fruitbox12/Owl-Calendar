@@ -155,9 +155,16 @@ class CalendarIndex extends Component {
     render = () => {
         return (
             <Layout>
-                  <style jsx>{`
-        .body {
-          color: blue;
+                  <style jsx global>{`
+        body {
+         
+          color: #3a004c;
+        }
+        h1 {
+          font-weight: 700;
+        }
+        p {
+          margin-bottom: 10px;
         }
       `}</style>
                 <Header

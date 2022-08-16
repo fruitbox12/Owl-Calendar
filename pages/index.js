@@ -155,6 +155,11 @@ class CalendarIndex extends Component {
     render = () => {
         return (
             <Layout>
+                  <style jsx>{`
+        .body {
+          color: blue;
+        }
+      `}</style>
                 <Header
                     setSelectedGroup={this.setSelectedGroup}
                     getSelectedGroup={this.getSelectedGroup}

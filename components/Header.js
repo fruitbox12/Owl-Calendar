@@ -123,7 +123,7 @@ class Header extends Component {
         return (
             <Menu stackable style={{ 'marginTop': '0.5em' }}>
                 <Menu.Item header>
-                    Owl Calendar
+                   DeVo Portal
                 </Menu.Item>
                 <Menu.Menu position="right">
                     <Menu.Item>
